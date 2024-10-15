@@ -1,1 +1,87 @@
+@font-face {
+            font-family: 'SakuraFont';
+            src: url('path_to_your_font_file.ttf') format('truetype');
+        }
 
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('1.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .text-container {
+            text-align: center;
+            font-family: 'SakuraFont', sans-serif;
+            width: 900px;
+            height: 116px;
+            gap: 0px;
+        }
+
+        .main-text {
+            font-size: 48px;
+            font-weight: bold;
+            margin-top: -180px;
+        }
+
+        .sub-text {
+            font-size: 48px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .small-text {
+            font-size: 20px;
+            margin-top: 50px;
+        }
+
+        .footer {
+            text-align: left;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.6); /* Прозрачность через rgba */
+            position: absolute;
+            bottom: 0;
+            width: 995px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* Размещение текста и кнопок слева */
+            border-radius: 20px;
+            font-family: 'SakuraFont', sans-serif;
+        }
+
+        .footer-text {
+            font-family: 'SakuraFont', sans-serif;
+            font-size: 33px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .btn-group .btn {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-group .btn:hover {
+            background-color: #EA9EC4;
+            color: #fff;
+        }
